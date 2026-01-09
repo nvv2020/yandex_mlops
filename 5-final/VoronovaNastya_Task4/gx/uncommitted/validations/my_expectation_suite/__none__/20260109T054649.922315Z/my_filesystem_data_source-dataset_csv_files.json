@@ -1,0 +1,3143 @@
+{
+  "id": null,
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {
+        "path": "dataset1.csv"
+      },
+      "batching_regex": "(?P<path>dataset1.csv$)",
+      "data_asset_name": "dataset_csv_files",
+      "data_connector_name": "fluent",
+      "datasource_name": "my_filesystem_data_source"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260109T054646.417455Z",
+      "pandas_data_fingerprint": "50278b7c0400d978ade235a515d15839"
+    },
+    "batch_parameters": null,
+    "batch_spec": {
+      "path": "dataset1.csv",
+      "reader_method": "read_csv",
+      "reader_options": {}
+    },
+    "checkpoint_id": null,
+    "great_expectations_version": "1.5.8",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-01-09T05:46:49.922315+00:00"
+    },
+    "validation_id": "d4ba3201-3042-4f88-ae88-1fa07125fcb9",
+    "validation_time": "2026-01-09T05:46:49.922315+00:00"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f7d83b19-cc7d-4511-848a-b395fcdcce58",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "track_id",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f891cebb-357d-45d4-b612-6bc5a06a57d7",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "track_id",
+          "max_value": 22,
+          "min_value": 22
+        },
+        "meta": {
+          "notes": "\u0434\u043b\u0438\u043d\u0430 \u0441\u0442\u0440\u043e\u043a\u0438 track_id \u0441\u0442\u0440\u043e\u0433\u043e 22 \u0441\u0438\u043c\u0432\u043e\u043b\u0430"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f09ae8d1-d216-4ac9-84bc-0dfaccd04302",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "artists",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": null
+          }
+        ],
+        "partial_unexpected_index_list": [
+          65900
+        ],
+        "partial_unexpected_list": [
+          null
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 0.0008771929824561403
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "bfcc66d1-8b08-4448-a461-cfa0c7ad4520",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "artists",
+          "max_value": 512,
+          "min_value": 2
+        },
+        "meta": {
+          "notes": "\u0434\u043b\u0438\u043d\u0430 \u0441\u0442\u0440\u043e\u043a\u0438 artists  \u043e\u0442 2 \u0434\u043e 512 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 1,
+        "missing_percent": 0.0008771929824561403,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": "Ariana DeBose;David Alvarez;Ana Isabelle;Jennifer Florentino;Natalie Toro;Arianna Rosario;Ilda Mason;Jeanette Delgado;Annelise Cepero;Tanairi Sade Vazquez;Jamila Velazquez;Edriz E. Rosa P\u00e9rez;Melody Mart\u00ed;Gaby Diaz;Juliette Feliciano;Isabella Ward;Maria Alexis Rodriguez;Yesenia Ayala;Gabriela M. Soto;Sebastian Serra;Julius Anthony Rubio;Ricardo A. Zayas;Yurel Echezarreta;Kelvin Delgado;Ricky Ubeda;Carlos S\u00e1nchez Fal\u00fa;Adriel Flete;Jacob Guzman;Carlos E. Gonzalez;David Avil\u00e9s Morales;Andrei Chagas;David Guzman"
+          }
+        ],
+        "partial_unexpected_index_list": [
+          98961
+        ],
+        "partial_unexpected_list": [
+          "Ariana DeBose;David Alvarez;Ana Isabelle;Jennifer Florentino;Natalie Toro;Arianna Rosario;Ilda Mason;Jeanette Delgado;Annelise Cepero;Tanairi Sade Vazquez;Jamila Velazquez;Edriz E. Rosa P\u00e9rez;Melody Mart\u00ed;Gaby Diaz;Juliette Feliciano;Isabella Ward;Maria Alexis Rodriguez;Yesenia Ayala;Gabriela M. Soto;Sebastian Serra;Julius Anthony Rubio;Ricardo A. Zayas;Yurel Echezarreta;Kelvin Delgado;Ricky Ubeda;Carlos S\u00e1nchez Fal\u00fa;Adriel Flete;Jacob Guzman;Carlos E. Gonzalez;David Avil\u00e9s Morales;Andrei Chagas;David Guzman"
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 0.0008772006771989228,
+        "unexpected_percent_nonmissing": 0.0008772006771989228,
+        "unexpected_percent_total": 0.0008771929824561403
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "71ad822e-39fd-4341-9a41-740b7e8f1162",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "album_name",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": null
+          }
+        ],
+        "partial_unexpected_index_list": [
+          65900
+        ],
+        "partial_unexpected_list": [
+          null
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 0.0008771929824561403
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "01cce1d7-2096-4062-a209-96eeb7cd5e11",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "album_name",
+          "max_value": 512,
+          "min_value": 2
+        },
+        "meta": {
+          "notes": "\u0434\u043b\u0438\u043d\u0430 \u0441\u0442\u0440\u043e\u043a\u0438 album_name  \u043e\u0442 2 \u0434\u043e 512 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 1,
+        "missing_percent": 0.0008771929824561403,
+        "partial_unexpected_counts": [
+          {
+            "count": 4,
+            "value": "E"
+          },
+          {
+            "count": 2,
+            "value": "4"
+          },
+          {
+            "count": 2,
+            "value": "\u708e"
+          },
+          {
+            "count": 2,
+            "value": "\u7d05"
+          },
+          {
+            "count": 1,
+            "value": "&"
+          },
+          {
+            "count": 1,
+            "value": "0"
+          },
+          {
+            "count": 1,
+            "value": "8"
+          },
+          {
+            "count": 1,
+            "value": "9"
+          },
+          {
+            "count": 1,
+            "value": "F"
+          },
+          {
+            "count": 1,
+            "value": "I"
+          },
+          {
+            "count": 1,
+            "value": "V"
+          },
+          {
+            "count": 1,
+            "value": "i"
+          },
+          {
+            "count": 1,
+            "value": "\u4e7e"
+          },
+          {
+            "count": 1,
+            "value": "\u8679"
+          }
+        ],
+        "partial_unexpected_index_list": [
+          650,
+          910,
+          1456,
+          1629,
+          3911,
+          5013,
+          5670,
+          5708,
+          5756,
+          6362,
+          6517,
+          6524,
+          8629,
+          12121,
+          12225,
+          12310,
+          12753,
+          12953,
+          17272,
+          19673
+        ],
+        "partial_unexpected_list": [
+          "0",
+          "E",
+          "V",
+          "4",
+          "&",
+          "\u708e",
+          "\u8679",
+          "\u708e",
+          "4",
+          "E",
+          "E",
+          "E",
+          "I",
+          "F",
+          "\u4e7e",
+          "\u7d05",
+          "8",
+          "\u7d05",
+          "i",
+          "9"
+        ],
+        "unexpected_count": 166,
+        "unexpected_percent": 0.14561531241502118,
+        "unexpected_percent_nonmissing": 0.14561531241502118,
+        "unexpected_percent_total": 0.1456140350877193
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "e8c86156-2042-4012-9d5b-525471d781ff",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "track_name",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": null
+          }
+        ],
+        "partial_unexpected_index_list": [
+          65900
+        ],
+        "partial_unexpected_list": [
+          null
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 0.0008771929824561403
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "5179da6e-860b-4b85-a03e-c68a827dff05",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "track_name",
+          "max_value": 512,
+          "min_value": 2
+        },
+        "meta": {
+          "notes": "\u0434\u043b\u0438\u043d\u0430 \u0441\u0442\u0440\u043e\u043a\u0438 track_name  \u043e\u0442 2 \u0434\u043e 512 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 1,
+        "missing_percent": 0.0008771929824561403,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": "\u708e"
+          },
+          {
+            "count": 1,
+            "value": "7"
+          },
+          {
+            "count": 1,
+            "value": "I"
+          },
+          {
+            "count": 1,
+            "value": "X"
+          },
+          {
+            "count": 1,
+            "value": "\u4e0a"
+          },
+          {
+            "count": 1,
+            "value": "\u4e7e"
+          },
+          {
+            "count": 1,
+            "value": "\u51ac"
+          },
+          {
+            "count": 1,
+            "value": "\u52c7"
+          },
+          {
+            "count": 1,
+            "value": "\u5618"
+          },
+          {
+            "count": 1,
+            "value": "\u5713"
+          },
+          {
+            "count": 1,
+            "value": "\u5fc3"
+          },
+          {
+            "count": 1,
+            "value": "\u602f"
+          },
+          {
+            "count": 1,
+            "value": "\u60b6"
+          },
+          {
+            "count": 1,
+            "value": "\u611b"
+          },
+          {
+            "count": 1,
+            "value": "\u6d77"
+          },
+          {
+            "count": 1,
+            "value": "\u71d5"
+          },
+          {
+            "count": 1,
+            "value": "\u79c1"
+          },
+          {
+            "count": 1,
+            "value": "\u8679"
+          },
+          {
+            "count": 1,
+            "value": "\u8ffd"
+          }
+        ],
+        "partial_unexpected_index_list": [
+          4489,
+          5013,
+          5263,
+          5303,
+          5595,
+          5670,
+          5708,
+          12090,
+          12133,
+          12225,
+          12334,
+          12346,
+          12387,
+          12410,
+          12633,
+          12649,
+          12745,
+          12983,
+          38228,
+          48466
+        ],
+        "partial_unexpected_list": [
+          "I",
+          "\u708e",
+          "\u4e0a",
+          "\u5618",
+          "\u79c1",
+          "\u8679",
+          "\u708e",
+          "\u71d5",
+          "\u52c7",
+          "\u4e7e",
+          "\u5fc3",
+          "\u5713",
+          "\u8ffd",
+          "\u6d77",
+          "\u611b",
+          "\u602f",
+          "\u51ac",
+          "\u60b6",
+          "7",
+          "X"
+        ],
+        "unexpected_count": 63,
+        "unexpected_percent": 0.05526364266353214,
+        "unexpected_percent_nonmissing": 0.05526364266353214,
+        "unexpected_percent_total": 0.05526315789473684
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "4eb00e4a-6487-4d6c-8ed1-3fa15cd48e8b",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "popularity",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "0c0a6793-23e8-4d23-b802-7a0726bebe3a",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "popularity",
+          "max_value": 100.0,
+          "min_value": 0.0
+        },
+        "meta": {
+          "notes": "popularity \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 100]"
+        },
+        "type": "expect_column_values_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "910b52a8-e6b7-4f8c-9f32-eadfa389c34d",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "duration_ms",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "4e6989b7-59b0-41b3-a28d-043d61ca997b",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "duration_ms",
+          "max_value": 5237760.0,
+          "min_value": 0.0
+        },
+        "meta": {
+          "notes": "duration_ms \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 5237760]"
+        },
+        "type": "expect_column_values_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "59421641-796b-4cda-a760-b9b349498896",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "explicit",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "5e07a42a-3ba4-4907-84ff-6bba34aa0bd7",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "danceability",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f2321fa9-3d15-48be-a503-7ad54f2dd629",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "danceability",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "danceability  \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 0.489
+          },
+          {
+            "count": 2,
+            "value": 0.625
+          },
+          {
+            "count": 1,
+            "value": 0.266
+          },
+          {
+            "count": 1,
+            "value": 0.407
+          },
+          {
+            "count": 1,
+            "value": 0.42
+          },
+          {
+            "count": 1,
+            "value": 0.438
+          },
+          {
+            "count": 1,
+            "value": 0.442
+          },
+          {
+            "count": 1,
+            "value": 0.483
+          },
+          {
+            "count": 1,
+            "value": 0.618
+          },
+          {
+            "count": 1,
+            "value": 0.627
+          },
+          {
+            "count": 1,
+            "value": 0.676
+          },
+          {
+            "count": 1,
+            "value": 0.688
+          },
+          {
+            "count": 1,
+            "value": 0.691
+          },
+          {
+            "count": 1,
+            "value": 0.703
+          },
+          {
+            "count": 1,
+            "value": 0.706
+          },
+          {
+            "count": 1,
+            "value": 0.717
+          },
+          {
+            "count": 1,
+            "value": 0.755
+          },
+          {
+            "count": 1,
+            "value": 0.795
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          0.676,
+          0.42,
+          0.438,
+          0.266,
+          0.618,
+          0.688,
+          0.407,
+          0.703,
+          0.625,
+          0.442,
+          0.627,
+          0.483,
+          0.489,
+          0.691,
+          0.755,
+          0.489,
+          0.706,
+          0.795,
+          0.625,
+          0.717
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "dabe5ab4-e2b8-4542-8ac9-d4863f5b7dd0",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "energy",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "6a2529d2-5842-4d9d-bea3-52b290352ffb",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "energy",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "energy \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 0.414
+          },
+          {
+            "count": 1,
+            "value": 0.0596
+          },
+          {
+            "count": 1,
+            "value": 0.0841
+          },
+          {
+            "count": 1,
+            "value": 0.112
+          },
+          {
+            "count": 1,
+            "value": 0.147
+          },
+          {
+            "count": 1,
+            "value": 0.166
+          },
+          {
+            "count": 1,
+            "value": 0.234
+          },
+          {
+            "count": 1,
+            "value": 0.303
+          },
+          {
+            "count": 1,
+            "value": 0.314
+          },
+          {
+            "count": 1,
+            "value": 0.32
+          },
+          {
+            "count": 1,
+            "value": 0.359
+          },
+          {
+            "count": 1,
+            "value": 0.363
+          },
+          {
+            "count": 1,
+            "value": 0.443
+          },
+          {
+            "count": 1,
+            "value": 0.444
+          },
+          {
+            "count": 1,
+            "value": 0.461
+          },
+          {
+            "count": 1,
+            "value": 0.481
+          },
+          {
+            "count": 1,
+            "value": 0.561
+          },
+          {
+            "count": 1,
+            "value": 0.632
+          },
+          {
+            "count": 1,
+            "value": 0.78
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          0.461,
+          0.166,
+          0.359,
+          0.0596,
+          0.443,
+          0.481,
+          0.147,
+          0.444,
+          0.414,
+          0.632,
+          0.363,
+          0.303,
+          0.314,
+          0.234,
+          0.78,
+          0.561,
+          0.112,
+          0.0841,
+          0.414,
+          0.32
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "30c6e2c2-4f8f-4ff9-a58e-ee1dcb5d24b5",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "key",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "4a0d44d6-1b80-4173-8d15-6ab6e1fc5c6c",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "key",
+          "max_value": 11,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "key \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 11]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "4e4476ba-0323-4167-940a-dfc2c8cb43e6",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "loudness",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "c072a47a-6cc6-4746-a9e3-df416837c377",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "loudness",
+          "max_value": 5,
+          "min_value": -45
+        },
+        "meta": {
+          "notes": "loudness \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [-45, 5]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": -9.331
+          },
+          {
+            "count": 2,
+            "value": -8.822
+          },
+          {
+            "count": 1,
+            "value": -18.515
+          },
+          {
+            "count": 1,
+            "value": -18.098
+          },
+          {
+            "count": 1,
+            "value": -18.09
+          },
+          {
+            "count": 1,
+            "value": -17.235
+          },
+          {
+            "count": 1,
+            "value": -10.058
+          },
+          {
+            "count": 1,
+            "value": -9.734
+          },
+          {
+            "count": 1,
+            "value": -9.681
+          },
+          {
+            "count": 1,
+            "value": -9.245
+          },
+          {
+            "count": 1,
+            "value": -8.807
+          },
+          {
+            "count": 1,
+            "value": -8.654
+          },
+          {
+            "count": 1,
+            "value": -8.393
+          },
+          {
+            "count": 1,
+            "value": -8.127
+          },
+          {
+            "count": 1,
+            "value": -7.933
+          },
+          {
+            "count": 1,
+            "value": -6.746
+          },
+          {
+            "count": 1,
+            "value": -6.441
+          },
+          {
+            "count": 1,
+            "value": -6.084
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21,
+          22
+        ],
+        "partial_unexpected_list": [
+          -6.746,
+          -17.235,
+          -9.734,
+          -18.515,
+          -9.681,
+          -8.807,
+          -8.822,
+          -9.331,
+          -8.127,
+          -10.058,
+          -9.245,
+          -6.441,
+          -6.084,
+          -7.933,
+          -18.098,
+          -18.09,
+          -8.393,
+          -9.331,
+          -8.654,
+          -8.822
+        ],
+        "unexpected_count": 105152,
+        "unexpected_percent": 92.23859649122808,
+        "unexpected_percent_nonmissing": 92.23859649122808,
+        "unexpected_percent_total": 92.23859649122808
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "de7ca359-ee93-40d1-b899-2eb5f64e45df",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "mode",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "6aec4a60-2784-4552-a152-7c1ea4ef7ea9",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "mode",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "mode \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "6617598e-7011-4bcc-a8a5-ce4797cd0729",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "speechiness",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "fb89a3b4-3bae-4d78-87af-c76609d89ac3",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "speechiness",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "speechiness \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 0.0369
+          },
+          {
+            "count": 1,
+            "value": 0.0274
+          },
+          {
+            "count": 1,
+            "value": 0.0283
+          },
+          {
+            "count": 1,
+            "value": 0.0285
+          },
+          {
+            "count": 1,
+            "value": 0.0291
+          },
+          {
+            "count": 1,
+            "value": 0.0295
+          },
+          {
+            "count": 1,
+            "value": 0.0327
+          },
+          {
+            "count": 1,
+            "value": 0.0331
+          },
+          {
+            "count": 1,
+            "value": 0.0355
+          },
+          {
+            "count": 1,
+            "value": 0.0363
+          },
+          {
+            "count": 1,
+            "value": 0.0391
+          },
+          {
+            "count": 1,
+            "value": 0.0417
+          },
+          {
+            "count": 1,
+            "value": 0.0429
+          },
+          {
+            "count": 1,
+            "value": 0.0461
+          },
+          {
+            "count": 1,
+            "value": 0.0526
+          },
+          {
+            "count": 1,
+            "value": 0.0557
+          },
+          {
+            "count": 1,
+            "value": 0.0763
+          },
+          {
+            "count": 1,
+            "value": 0.105
+          },
+          {
+            "count": 1,
+            "value": 0.143
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          0.143,
+          0.0763,
+          0.0557,
+          0.0363,
+          0.0526,
+          0.105,
+          0.0355,
+          0.0417,
+          0.0369,
+          0.0295,
+          0.0291,
+          0.0429,
+          0.0331,
+          0.0285,
+          0.0327,
+          0.0274,
+          0.0391,
+          0.0461,
+          0.0369,
+          0.0283
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "5f4782e9-05c8-4417-8cd4-f72699236d99",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "acousticness",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "02cbf1f5-40ae-473a-94cd-364dae8f0830",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "acousticness",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "acousticness \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 0.294
+          },
+          {
+            "count": 1,
+            "value": 0.0322
+          },
+          {
+            "count": 1,
+            "value": 0.124
+          },
+          {
+            "count": 1,
+            "value": 0.2
+          },
+          {
+            "count": 1,
+            "value": 0.21
+          },
+          {
+            "count": 1,
+            "value": 0.279
+          },
+          {
+            "count": 1,
+            "value": 0.289
+          },
+          {
+            "count": 1,
+            "value": 0.426
+          },
+          {
+            "count": 1,
+            "value": 0.469
+          },
+          {
+            "count": 1,
+            "value": 0.559
+          },
+          {
+            "count": 1,
+            "value": 0.694
+          },
+          {
+            "count": 1,
+            "value": 0.742
+          },
+          {
+            "count": 1,
+            "value": 0.749
+          },
+          {
+            "count": 1,
+            "value": 0.777
+          },
+          {
+            "count": 1,
+            "value": 0.827
+          },
+          {
+            "count": 1,
+            "value": 0.83
+          },
+          {
+            "count": 1,
+            "value": 0.857
+          },
+          {
+            "count": 1,
+            "value": 0.905
+          },
+          {
+            "count": 1,
+            "value": 0.924
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          0.0322,
+          0.924,
+          0.21,
+          0.905,
+          0.469,
+          0.289,
+          0.857,
+          0.559,
+          0.294,
+          0.426,
+          0.279,
+          0.694,
+          0.749,
+          0.777,
+          0.124,
+          0.2,
+          0.827,
+          0.742,
+          0.294,
+          0.83
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "81a217be-d92d-4eb1-a83a-7edbf45889b8",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "instrumentalness",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "f846c43d-38cb-42a5-8d3d-8b4174fb6b02",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "instrumentalness",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "instrumentalness \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 11,
+            "value": 0.0
+          },
+          {
+            "count": 1,
+            "value": 1.01e-06
+          },
+          {
+            "count": 1,
+            "value": 2.89e-06
+          },
+          {
+            "count": 1,
+            "value": 4.03e-06
+          },
+          {
+            "count": 1,
+            "value": 5.56e-06
+          },
+          {
+            "count": 1,
+            "value": 1.17e-05
+          },
+          {
+            "count": 1,
+            "value": 2.83e-05
+          },
+          {
+            "count": 1,
+            "value": 4.56e-05
+          },
+          {
+            "count": 1,
+            "value": 7.07e-05
+          },
+          {
+            "count": 1,
+            "value": 0.00419
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          1.01e-06,
+          5.56e-06,
+          0.0,
+          7.07e-05,
+          0.0,
+          0.0,
+          2.89e-06,
+          0.0,
+          0.0,
+          0.00419,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.83e-05,
+          4.56e-05,
+          4.03e-06,
+          1.17e-05,
+          0.0,
+          0.0
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "9568bb0f-c696-4417-ba49-3b593077ca26",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "liveness",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "eb9a210e-a879-4c67-a1ab-6906acacb64d",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "liveness",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "liveness \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 0.151
+          },
+          {
+            "count": 1,
+            "value": 0.0735
+          },
+          {
+            "count": 1,
+            "value": 0.0829
+          },
+          {
+            "count": 1,
+            "value": 0.0853
+          },
+          {
+            "count": 1,
+            "value": 0.0913
+          },
+          {
+            "count": 1,
+            "value": 0.0928
+          },
+          {
+            "count": 1,
+            "value": 0.0973
+          },
+          {
+            "count": 1,
+            "value": 0.101
+          },
+          {
+            "count": 1,
+            "value": 0.107
+          },
+          {
+            "count": 1,
+            "value": 0.113
+          },
+          {
+            "count": 1,
+            "value": 0.115
+          },
+          {
+            "count": 1,
+            "value": 0.117
+          },
+          {
+            "count": 1,
+            "value": 0.12
+          },
+          {
+            "count": 1,
+            "value": 0.121
+          },
+          {
+            "count": 1,
+            "value": 0.125
+          },
+          {
+            "count": 1,
+            "value": 0.132
+          },
+          {
+            "count": 1,
+            "value": 0.179
+          },
+          {
+            "count": 1,
+            "value": 0.189
+          },
+          {
+            "count": 1,
+            "value": 0.358
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          0.358,
+          0.101,
+          0.117,
+          0.132,
+          0.0829,
+          0.189,
+          0.0913,
+          0.0973,
+          0.151,
+          0.0735,
+          0.0928,
+          0.115,
+          0.113,
+          0.12,
+          0.121,
+          0.179,
+          0.125,
+          0.0853,
+          0.151,
+          0.107
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "74afa6cc-56a2-4e13-89ff-e6af5528168a",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "valence",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "a2adb7e4-01b6-47cd-a643-471aa3719f42",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "valence",
+          "max_value": 1,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "valence \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 1]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 2,
+            "value": 0.669
+          },
+          {
+            "count": 1,
+            "value": 0.0765
+          },
+          {
+            "count": 1,
+            "value": 0.12
+          },
+          {
+            "count": 1,
+            "value": 0.139
+          },
+          {
+            "count": 1,
+            "value": 0.143
+          },
+          {
+            "count": 1,
+            "value": 0.167
+          },
+          {
+            "count": 1,
+            "value": 0.196
+          },
+          {
+            "count": 1,
+            "value": 0.209
+          },
+          {
+            "count": 1,
+            "value": 0.238
+          },
+          {
+            "count": 1,
+            "value": 0.267
+          },
+          {
+            "count": 1,
+            "value": 0.301
+          },
+          {
+            "count": 1,
+            "value": 0.322
+          },
+          {
+            "count": 1,
+            "value": 0.387
+          },
+          {
+            "count": 1,
+            "value": 0.414
+          },
+          {
+            "count": 1,
+            "value": 0.607
+          },
+          {
+            "count": 1,
+            "value": 0.609
+          },
+          {
+            "count": 1,
+            "value": 0.666
+          },
+          {
+            "count": 1,
+            "value": 0.712
+          },
+          {
+            "count": 1,
+            "value": 0.715
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "partial_unexpected_list": [
+          0.715,
+          0.267,
+          0.12,
+          0.143,
+          0.167,
+          0.666,
+          0.0765,
+          0.712,
+          0.669,
+          0.196,
+          0.301,
+          0.139,
+          0.607,
+          0.209,
+          0.387,
+          0.238,
+          0.414,
+          0.609,
+          0.669,
+          0.322
+        ],
+        "unexpected_count": 114000,
+        "unexpected_percent": 100.0,
+        "unexpected_percent_nonmissing": 100.0,
+        "unexpected_percent_total": 100.0
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "0209683c-d56c-433f-b934-d03bee942a36",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "tempo",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "248b017f-4baa-4081-a264-0231da2de419",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "tempo",
+          "max_value": 256,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "tempo \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 256]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "e8c552ff-81e2-4561-ab61-99b3967a5af5",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "time_signature",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "d2cbd741-185f-4dec-84a9-900040e83e2b",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "time_signature",
+          "max_value": 5,
+          "min_value": 0
+        },
+        "meta": {
+          "notes": "tempo \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 [0, 5]"
+        },
+        "type": "expect_column_value_lengths_to_be_between"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "23efe0e4-b010-486f-866c-8c9b9211446c",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "track_genre",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "type": "expect_column_values_to_not_be_null"
+      },
+      "meta": {},
+      "result": {
+        "element_count": 114000,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "85a73891-33e7-4270-872c-f3a54aaf880b",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column": "track_genre",
+          "value_set": [
+            "acoustic",
+            "afrobeat",
+            "alt-rock",
+            "alternative",
+            "ambient",
+            "anime",
+            "black-metal",
+            "bluegrass",
+            "blues",
+            "brazil",
+            "breakbeat",
+            "british",
+            "cantopop",
+            "chicago-house",
+            "children",
+            "chill",
+            "classical",
+            "club",
+            "comedy",
+            "country",
+            "dance",
+            "dancehall",
+            "death-metal",
+            "deep-house",
+            "detroit-techno",
+            "disco",
+            "disney",
+            "drum-and-bass",
+            "dub",
+            "dubstep",
+            "edm",
+            "electro",
+            "electronic",
+            "emo",
+            "folk",
+            "forro",
+            "french",
+            "funk",
+            "garage",
+            "german",
+            "gospel",
+            "goth",
+            "grindcore",
+            "groove",
+            "grunge",
+            "guitar",
+            "happy",
+            "hard-rock",
+            "hardcore",
+            "hardstyle",
+            "heavy-metal",
+            "hip-hop",
+            "honky-tonk",
+            "house",
+            "idm",
+            "indian",
+            "indie-pop",
+            "indie",
+            "industrial",
+            "iranian",
+            "j-dance",
+            "j-idol",
+            "j-pop",
+            "j-rock",
+            "jazz",
+            "k-pop",
+            "kids",
+            "latin",
+            "latino",
+            "malay",
+            "mandopop",
+            "metal",
+            "metalcore",
+            "minimal-techno",
+            "mpb",
+            "new-age",
+            "opera",
+            "pagode",
+            "party",
+            "piano",
+            "pop-film",
+            "pop",
+            "power-pop",
+            "progressive-house",
+            "psych-rock",
+            "punk-rock",
+            "punk",
+            "r-n-b",
+            "reggae",
+            "reggaeton",
+            "rock-n-roll",
+            "rock",
+            "rockabilly",
+            "romance",
+            "sad",
+            "salsa",
+            "samba",
+            "sertanejo",
+            "show-tunes",
+            "singer-songwriter",
+            "ska",
+            "sleep",
+            "songwriter",
+            "soul",
+            "spanish",
+            "study",
+            "swedish",
+            "synth-pop",
+            "tango",
+            "techno",
+            "trance",
+            "trip-hop",
+            "turkish",
+            "world-music"
+          ]
+        },
+        "meta": {},
+        "type": "expect_column_distinct_values_to_be_in_set"
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "value_counts": [
+            {
+              "count": 1000,
+              "value": "acoustic"
+            },
+            {
+              "count": 1000,
+              "value": "afrobeat"
+            },
+            {
+              "count": 1000,
+              "value": "alt-rock"
+            },
+            {
+              "count": 1000,
+              "value": "alternative"
+            },
+            {
+              "count": 1000,
+              "value": "ambient"
+            },
+            {
+              "count": 1000,
+              "value": "anime"
+            },
+            {
+              "count": 1000,
+              "value": "black-metal"
+            },
+            {
+              "count": 1000,
+              "value": "bluegrass"
+            },
+            {
+              "count": 1000,
+              "value": "blues"
+            },
+            {
+              "count": 1000,
+              "value": "brazil"
+            },
+            {
+              "count": 1000,
+              "value": "breakbeat"
+            },
+            {
+              "count": 1000,
+              "value": "british"
+            },
+            {
+              "count": 1000,
+              "value": "cantopop"
+            },
+            {
+              "count": 1000,
+              "value": "chicago-house"
+            },
+            {
+              "count": 1000,
+              "value": "children"
+            },
+            {
+              "count": 1000,
+              "value": "chill"
+            },
+            {
+              "count": 1000,
+              "value": "classical"
+            },
+            {
+              "count": 1000,
+              "value": "club"
+            },
+            {
+              "count": 1000,
+              "value": "comedy"
+            },
+            {
+              "count": 1000,
+              "value": "country"
+            },
+            {
+              "count": 1000,
+              "value": "dance"
+            },
+            {
+              "count": 1000,
+              "value": "dancehall"
+            },
+            {
+              "count": 1000,
+              "value": "death-metal"
+            },
+            {
+              "count": 1000,
+              "value": "deep-house"
+            },
+            {
+              "count": 1000,
+              "value": "detroit-techno"
+            },
+            {
+              "count": 1000,
+              "value": "disco"
+            },
+            {
+              "count": 1000,
+              "value": "disney"
+            },
+            {
+              "count": 1000,
+              "value": "drum-and-bass"
+            },
+            {
+              "count": 1000,
+              "value": "dub"
+            },
+            {
+              "count": 1000,
+              "value": "dubstep"
+            },
+            {
+              "count": 1000,
+              "value": "edm"
+            },
+            {
+              "count": 1000,
+              "value": "electro"
+            },
+            {
+              "count": 1000,
+              "value": "electronic"
+            },
+            {
+              "count": 1000,
+              "value": "emo"
+            },
+            {
+              "count": 1000,
+              "value": "folk"
+            },
+            {
+              "count": 1000,
+              "value": "forro"
+            },
+            {
+              "count": 1000,
+              "value": "french"
+            },
+            {
+              "count": 1000,
+              "value": "funk"
+            },
+            {
+              "count": 1000,
+              "value": "garage"
+            },
+            {
+              "count": 1000,
+              "value": "german"
+            },
+            {
+              "count": 1000,
+              "value": "gospel"
+            },
+            {
+              "count": 1000,
+              "value": "goth"
+            },
+            {
+              "count": 1000,
+              "value": "grindcore"
+            },
+            {
+              "count": 1000,
+              "value": "groove"
+            },
+            {
+              "count": 1000,
+              "value": "grunge"
+            },
+            {
+              "count": 1000,
+              "value": "guitar"
+            },
+            {
+              "count": 1000,
+              "value": "happy"
+            },
+            {
+              "count": 1000,
+              "value": "hard-rock"
+            },
+            {
+              "count": 1000,
+              "value": "hardcore"
+            },
+            {
+              "count": 1000,
+              "value": "hardstyle"
+            },
+            {
+              "count": 1000,
+              "value": "heavy-metal"
+            },
+            {
+              "count": 1000,
+              "value": "hip-hop"
+            },
+            {
+              "count": 1000,
+              "value": "honky-tonk"
+            },
+            {
+              "count": 1000,
+              "value": "house"
+            },
+            {
+              "count": 1000,
+              "value": "idm"
+            },
+            {
+              "count": 1000,
+              "value": "indian"
+            },
+            {
+              "count": 1000,
+              "value": "indie"
+            },
+            {
+              "count": 1000,
+              "value": "indie-pop"
+            },
+            {
+              "count": 1000,
+              "value": "industrial"
+            },
+            {
+              "count": 1000,
+              "value": "iranian"
+            },
+            {
+              "count": 1000,
+              "value": "j-dance"
+            },
+            {
+              "count": 1000,
+              "value": "j-idol"
+            },
+            {
+              "count": 1000,
+              "value": "j-pop"
+            },
+            {
+              "count": 1000,
+              "value": "j-rock"
+            },
+            {
+              "count": 1000,
+              "value": "jazz"
+            },
+            {
+              "count": 1000,
+              "value": "k-pop"
+            },
+            {
+              "count": 1000,
+              "value": "kids"
+            },
+            {
+              "count": 1000,
+              "value": "latin"
+            },
+            {
+              "count": 1000,
+              "value": "latino"
+            },
+            {
+              "count": 1000,
+              "value": "malay"
+            },
+            {
+              "count": 1000,
+              "value": "mandopop"
+            },
+            {
+              "count": 1000,
+              "value": "metal"
+            },
+            {
+              "count": 1000,
+              "value": "metalcore"
+            },
+            {
+              "count": 1000,
+              "value": "minimal-techno"
+            },
+            {
+              "count": 1000,
+              "value": "mpb"
+            },
+            {
+              "count": 1000,
+              "value": "new-age"
+            },
+            {
+              "count": 1000,
+              "value": "opera"
+            },
+            {
+              "count": 1000,
+              "value": "pagode"
+            },
+            {
+              "count": 1000,
+              "value": "party"
+            },
+            {
+              "count": 1000,
+              "value": "piano"
+            },
+            {
+              "count": 1000,
+              "value": "pop"
+            },
+            {
+              "count": 1000,
+              "value": "pop-film"
+            },
+            {
+              "count": 1000,
+              "value": "power-pop"
+            },
+            {
+              "count": 1000,
+              "value": "progressive-house"
+            },
+            {
+              "count": 1000,
+              "value": "psych-rock"
+            },
+            {
+              "count": 1000,
+              "value": "punk"
+            },
+            {
+              "count": 1000,
+              "value": "punk-rock"
+            },
+            {
+              "count": 1000,
+              "value": "r-n-b"
+            },
+            {
+              "count": 1000,
+              "value": "reggae"
+            },
+            {
+              "count": 1000,
+              "value": "reggaeton"
+            },
+            {
+              "count": 1000,
+              "value": "rock"
+            },
+            {
+              "count": 1000,
+              "value": "rock-n-roll"
+            },
+            {
+              "count": 1000,
+              "value": "rockabilly"
+            },
+            {
+              "count": 1000,
+              "value": "romance"
+            },
+            {
+              "count": 1000,
+              "value": "sad"
+            },
+            {
+              "count": 1000,
+              "value": "salsa"
+            },
+            {
+              "count": 1000,
+              "value": "samba"
+            },
+            {
+              "count": 1000,
+              "value": "sertanejo"
+            },
+            {
+              "count": 1000,
+              "value": "show-tunes"
+            },
+            {
+              "count": 1000,
+              "value": "singer-songwriter"
+            },
+            {
+              "count": 1000,
+              "value": "ska"
+            },
+            {
+              "count": 1000,
+              "value": "sleep"
+            },
+            {
+              "count": 1000,
+              "value": "songwriter"
+            },
+            {
+              "count": 1000,
+              "value": "soul"
+            },
+            {
+              "count": 1000,
+              "value": "spanish"
+            },
+            {
+              "count": 1000,
+              "value": "study"
+            },
+            {
+              "count": 1000,
+              "value": "swedish"
+            },
+            {
+              "count": 1000,
+              "value": "synth-pop"
+            },
+            {
+              "count": 1000,
+              "value": "tango"
+            },
+            {
+              "count": 1000,
+              "value": "techno"
+            },
+            {
+              "count": 1000,
+              "value": "trance"
+            },
+            {
+              "count": 1000,
+              "value": "trip-hop"
+            },
+            {
+              "count": 1000,
+              "value": "turkish"
+            },
+            {
+              "count": 1000,
+              "value": "world-music"
+            }
+          ]
+        },
+        "observed_value": [
+          "acoustic",
+          "afrobeat",
+          "alt-rock",
+          "alternative",
+          "ambient",
+          "anime",
+          "black-metal",
+          "bluegrass",
+          "blues",
+          "brazil",
+          "breakbeat",
+          "british",
+          "cantopop",
+          "chicago-house",
+          "children",
+          "chill",
+          "classical",
+          "club",
+          "comedy",
+          "country",
+          "dance",
+          "dancehall",
+          "death-metal",
+          "deep-house",
+          "detroit-techno",
+          "disco",
+          "disney",
+          "drum-and-bass",
+          "dub",
+          "dubstep",
+          "edm",
+          "electro",
+          "electronic",
+          "emo",
+          "folk",
+          "forro",
+          "french",
+          "funk",
+          "garage",
+          "german",
+          "gospel",
+          "goth",
+          "grindcore",
+          "groove",
+          "grunge",
+          "guitar",
+          "happy",
+          "hard-rock",
+          "hardcore",
+          "hardstyle",
+          "heavy-metal",
+          "hip-hop",
+          "honky-tonk",
+          "house",
+          "idm",
+          "indian",
+          "indie",
+          "indie-pop",
+          "industrial",
+          "iranian",
+          "j-dance",
+          "j-idol",
+          "j-pop",
+          "j-rock",
+          "jazz",
+          "k-pop",
+          "kids",
+          "latin",
+          "latino",
+          "malay",
+          "mandopop",
+          "metal",
+          "metalcore",
+          "minimal-techno",
+          "mpb",
+          "new-age",
+          "opera",
+          "pagode",
+          "party",
+          "piano",
+          "pop",
+          "pop-film",
+          "power-pop",
+          "progressive-house",
+          "psych-rock",
+          "punk",
+          "punk-rock",
+          "r-n-b",
+          "reggae",
+          "reggaeton",
+          "rock",
+          "rock-n-roll",
+          "rockabilly",
+          "romance",
+          "sad",
+          "salsa",
+          "samba",
+          "sertanejo",
+          "show-tunes",
+          "singer-songwriter",
+          "ska",
+          "sleep",
+          "songwriter",
+          "soul",
+          "spanish",
+          "study",
+          "swedish",
+          "synth-pop",
+          "tango",
+          "techno",
+          "trance",
+          "trip-hop",
+          "turkish",
+          "world-music"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "id": "61ca9380-2a79-44bf-955c-e9178b860353",
+        "kwargs": {
+          "batch_id": "my_filesystem_data_source-dataset_csv_files",
+          "column_set": [
+            "track_id",
+            "artists",
+            "album_name",
+            "track_name",
+            "popularity",
+            "duration_ms",
+            "explicit",
+            "danceability",
+            "energy",
+            "key",
+            "loudness",
+            "mode",
+            "speechiness",
+            "acousticness",
+            "instrumentalness",
+            "liveness",
+            "valence",
+            "tempo",
+            "time_signature",
+            "track_genre"
+          ],
+          "exact_match": false
+        },
+        "meta": {
+          "notes": "\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430, \u0447\u0442\u043e \u0432\u0441\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u043a\u043e\u043b\u043e\u043d\u043a\u0438 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0442"
+        },
+        "type": "expect_table_columns_to_match_set"
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "mismatched": {
+            "unexpected": [
+              "Unnamed: 0"
+            ]
+          }
+        },
+        "observed_value": [
+          "Unnamed: 0",
+          "acousticness",
+          "album_name",
+          "artists",
+          "danceability",
+          "duration_ms",
+          "energy",
+          "explicit",
+          "instrumentalness",
+          "key",
+          "liveness",
+          "loudness",
+          "mode",
+          "popularity",
+          "speechiness",
+          "tempo",
+          "time_signature",
+          "track_genre",
+          "track_id",
+          "track_name",
+          "valence"
+        ]
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 40,
+    "success_percent": 72.5,
+    "successful_expectations": 29,
+    "unsuccessful_expectations": 11
+  },
+  "success": false,
+  "suite_name": "my_expectation_suite",
+  "suite_parameters": {}
+}

@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "d0b1ecf3-8aa2-43a8-9a84-cac089288a8c",
+      "name": "dataset_csv_files"
+    },
+    "batch_definition": {
+      "id": "0e3baf75-61a9-47ab-ae45-fc4ea9d3ee42",
+      "name": "dataset1.csv"
+    },
+    "datasource": {
+      "id": "aac367ec-66a6-43f9-afec-3fc36e98fbc4",
+      "name": "my_filesystem_data_source"
+    }
+  },
+  "id": "d4ba3201-3042-4f88-ae88-1fa07125fcb9",
+  "name": "validation_run_1",
+  "suite": {
+    "id": "e676fa37-0360-4b73-b9f9-2c41191f704b",
+    "name": "my_expectation_suite"
+  }
+}
