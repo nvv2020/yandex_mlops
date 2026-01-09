@@ -1,0 +1,7 @@
+pandas>=2.0.3
+matplotlib>=3.8.1
+numpy>=1.26.1
+scipy==1.10.1
+evidently>=0.3.11
+jupyterlab>=4.3.2
+dvc==3.66.1
