@@ -5,3 +5,4 @@ scipy==1.10.1
 evidently>=0.3.11
 jupyterlab>=4.3.2
 dvc==3.66.1
+uv==0.8.8
